@@ -25,18 +25,3 @@ const aparecerImagen= (imagen)=>{
     imagenesLight.classList.toggle('show-image')
 }
 
-
-//ACCIONES EN EL MENU
-const menu1= document.querySelector('.menu');
-const menu= document.querySelector('.menu-navegacion');
-/*MOSTRAR EL MENU*/
-menu1.addEventListener('click',()=>{
-    menu.classList.toggle("spread");
-})
-/*CERRAR EL MENU*/
-window.addEventListener('click', e=>{
-    if(menu.classList.contains('spread')
-    && e.target !=menu && e.target != menu1 ){
-    
-    menu.classList.toggle("spread");}
-})
