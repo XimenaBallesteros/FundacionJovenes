@@ -39,7 +39,8 @@ header{
     text-align: right;
     padding-bottom: 0.1px;
     color: antiquewhite;
-    background: linear-gradient(-180deg, #fd56e7 0%,#56cefd 0%,  #73fd9c 50%);
+    background: linear-gradient(-90deg, #fd56e7 0%,#85fd56 10%,  #73b3fd 40%,#ffffff 100%);
+    
 }
 .menufijo1{
     margin: -20px auto;
@@ -55,6 +56,7 @@ header{
     text-decoration: none;
     font: 16px;
     padding: 10px 20px 19px 20px;
+    box-shadow: 0 0 6px rgb(0, 195, 255);
 }
 .menufijo1 ul a:hover{
     color:#09ff01;
@@ -70,7 +72,7 @@ header{
     background: linear-gradient(-180deg, #06ac00 0%,  #dffbff 100%);
 }
 .menufijo2 ul a{
-    color :black;
+    color :rgb(255, 255, 255);
     text-decoration: none;
     font: 16px;
     padding: 10px 20px 19px 20px;
@@ -80,7 +82,7 @@ header{
     background-color: #fafafa;
 }
 .menufijo ul a{
-    color :black;
+    color :rgb(255, 255, 255);
     text-decoration: none;
     font: 16px;
     padding: 10px 20px 19px 20px;
