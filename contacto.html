@@ -4,35 +4,53 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/5706781ca2.js" crossorigin="anonymous"></script>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,300;1,600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5706781ca2.js" crossorigin="anonymous"></script>
+    <title>Formulario de contacto - Mensaje enviado</title>
+    
 </head>
 <body> 
-    <header class = "header" id ="inicio">
-        <a href ="index.html" ><img src="img/logo.jpg" alt="" class="logo"></a>
-    
-        <section id= menufijo2>
+   <?php 
+$myemail = 'yussaselude-8947@yopmail.com';
+$name = $_POST['nombre'];
+$correo = $_POST['correo'];
+$asunto = $_POST['asunto'];
+$message = $_POST['mensaje'];
+
+$to = $myemail;
+$email_subject = "Nuevo mensaje: $subject";
+$email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Asunto: $asunto \n Mensaje: \n $message";
+$headers = "From: $email";
+
+mail($to, $email_subject, $email_body, $headers);
+echo "El mensaje se ha enviado correctamente";
+?>
+   <header class = "header" id ="inicio">
+    <a href ="index.html" ><img src="img/logo.jpg" alt="" class="logo"></a>
+
+    <section id= menufijo>
+        
+        <div class = "menufijo">
             
-            <div class = "menufijo2">
-                
-                <ul>
-                <br>
-               <a href="index.html"> <h3>Inicio   </a> 
-               <a href=" quienes.html"> Quienes Somos   </a>
-               <a href=" productos.html "> Productos y Servicios   </a>
-               <a href=" galeria.html "> Galeria   </a>
-               <a href=" donaciones.html "> Donaciones   </a>
-               <a href= "contacto.html"> Contacto   </a></h3></a> 
-               <br>
-               </ul>
-               
-              </div> 
-            </section>
-    
-    </header>
+            <ul>
+            <br>
+            
+           <a href="index.html"> <h3>Inicio   </a> 
+           <a href=" quienes.html"> Quienes Somos   </a>
+           <a href=" productos.html "> Productos y Servicios   </a>
+           <a href=" galeria.html "> Galeria   </a>
+           <a href=" donaciones.html "> Donaciones   </a>
+           <a href= "contacto.html"> Contacto   </a></h3></a> 
+           <br>
+           </ul>
+           
+          </div> 
+        </section>
+
+</header>
 <section class = "contenedor" id = "contendor">
     <h2 class = "subtitulo" ><br>Información de Contacto</h2></h2>
     <p class = "parrafo">¿Hay algún problema? No dudes en contactarnos. Nuestros consultores pueden brindarle cualquier sugerencia. Puede hacerlo a través de cualquiera de los siguientes canales. <br></p></section>
@@ -72,30 +90,71 @@
             </form>
         </div>
     </div>
-    <footer id ="contacto">
-        <div class = "contenedor footer-content">
-            <div class ="contact-us">
-                <h2 class= "brand"> Contacto</h2>
-                <h3 class="brand-p">Fundación jóvenes para la transformación social</h3>
-                <p class="brand-p2"> direccionusme@gmail.com <br>presidencia.turbo@gmail.com
-                    <br> Línea de Atención 3155506381 </p>
-            </div>
-                <div class = "social-media">
-            <a href ="https://www.facebook.com/CorazonSocial2020" target="_blank" class = "social-media-icon">
-                <i class='bx bxl-facebook'></i>
-              </a>
-                <a href ="./" class = "social-media-icon">
-                    <i class='bx bxl-whatsapp' ></i>
-                </a>
-                <a href ="https://www.instagram.com/fundacion_jovenes/?hl=es-la" target="_blank" class = "social-media-icon">
-                    <i class='bx bxl-instagram' ></i>
-            </a>
-            </div>
-            
-            </div>
-        <div class="line">
-    
+   
+<footer id ="contacto">
+    <div class = "contenedor footer-content">
+        <div class ="contact-us">
+            <h2 class= "brand"> Contacto</h2>
+            <h3 class="brand-p">Fundación jóvenes para la transformación social</h3>
+            <p> direccionusme@gmail.com <br>presidencia.turbo@gmail.com
+                <br> Línea de Atención 3155506381 </p>
         </div>
-    </footer>
-    </body>
-</html>
+            <div class = "social-media">
+        <a href ="https://www.facebook.com/CorazonSocial2020" target="_blank" class = "social-media-icon">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href ="https://api.whatsapp.com/send?phone=573507059941&text=Contacto%20con%20la%20sede%20Engativ%C3%A1" class = "social-media-icon">
+            <i class='bx bxl-whatsapp' ></i>
+        </a>
+        <a href ="https://api.whatsapp.com/send?phone=573118009845&text=Contacto%20con%20la%20sede%20Usema" class = "social-media-icon">
+            <i class='bx bxl-whatsapp' ></i>
+            <a href ="https://www.instagram.com/fundacion_jovenes/?hl=es-la" target="_blank" class = "social-media-icon">
+                <i class='bx bxl-instagram' ></i>
+        </a>
+        </div>
+        
+        </div>
+    <div class="line">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="contacto.js"></script>
+</footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>

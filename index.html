@@ -39,41 +39,51 @@
     <main>
         <br><br><br><br><br><br>
             <h1 class="titulo">  Fundación Jóvenes para la transformación social</h1>
-            <p class= "copy"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, voluptates dignissimos? Autem, iure ratione aut reiciendis illo adipisci recusandae eveniet voluptas numquam fugit temporibus sequi nemo ut ea possimus pariatur?</p>
-        
+            <br><br><br>
   <section id = noticias>
-    <div class ="foto-centro">
-    <img src="img/alimento.jpg">
+    <div class="carousel">
+        <div class = "boton retroceder" button id="retroceder">&#60;</button></div>
+        <div id="imagen"></div>
+        <div class = "boton avanzar" button id="avanzar">&#62;</button></div>
+    </div>
+    <div class="controles">
+        <br><br><br>
+        <button id="play" class ="play"  >Play</button>
+        <button id="stop" disabled class ="play">Stop</button></div>
+    </div>
     
 </div>
-<p class ="parrafo" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus dolorum a asperiores autem, delectus culpa aut, aperiam sapiente est dolore impedit sunt maxime doloribus molestias quis, consequuntur blanditiis voluptas fuga!</p>
+<p class ="parrafo" >Los invitamos a participar en los servicios ofrecidos en Usme y Engativá</p>
         <br>
     </section>
     <section id = "noticias-eventos">
     <div class="news-cards">
         <div>
             <img src="img/barberia.jpg" alt="noticia 1">
-            <h3>Lorem ipsum dolor.</h3>
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quibusdam id distinctio provident laboriosam commodi aperiam error itaque unde ullam!</p>
-            <a href="#">Leer más <i class="fas fa-angel-double-right"></i></a>
+            <h3>Barbería.</h3>
+            <p class="parrafo">Tiene como propósito que el aprendiz conozca, comprenda varios procedimientos asociados al corte, arreglo de cabello, manejo de cuchilla, desvanecidos, cortes avanzados, entre otros.</p>
+            
         </div>
         <div>
             <img src="img/ingles.jpg" alt="noticia 1">
-            <h3>Lorem ipsum dolor.</h3>
-            <p  class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quibusdam id distinctio provident laboriosam commodi aperiam error itaque unde ullam!</p>
-            <a href="#">Leer más <i class="fas fa-angel-double-right"></i></a>
+            <h3>Ingles.</h3>
+            <p  class="parrafo">El segundo idioma Ingles, se ejecuta en un nivel básico con el fin de que los niños, niñas y jóvenes pierdan el miedo ante hablar o conversar, adquieran conocimientos y fortalezcan sus habilidades en este idioma.</p>
+            
         </div>
         <div>
             <img src="img/escolar.jpg" alt="noticia 1">
-            <h3>Lorem ipsum dolor.</h3>
-            <p class="parrafo"> class="parrafo"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quibusdam id distinctio provident laboriosam commodi aperiam error itaque unde ullam!</p>
-            <a href="#">Leer más <i class="fas fa-angel-double-right"></i></a>
+            <h3>Refuerzo escolar.</h3>
+            <p class="parrafo"> Nuestro servicio brinda refuerzo escolar ante dificultades académicas y así mismo, el asesoramiento ante cualquier asignatura de los diferentes grados.</p>
+            
         </div>
         <div>
-            <img src="img/barberia2.jpg" alt="noticia 1">
-            <h3>Lorem ipsum dolor.</h3>
-            <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quibusdam id distinctio provident laboriosam commodi aperiam error itaque unde ullam!</p>
-            <a href="#">Leer más <i class="fas fa-angel-double-right"></i></a>
+            <img src="img/11.jpg" alt="noticia 1">
+            <h3>Donaciones</h3>
+            <p class="parrafo">Nuestra solidaridad continúa 
+                Muchas personas quieren seguir donando, por esto, mantendremos nuestros canales habilitados 
+                Línea de Atención 3155506381 
+                </p>
+            <a href="donaciones.html">Leer más <i class="fas fa-angel-double-right"></i></a>
         </div>
     </div>
 </section>   
@@ -92,9 +102,11 @@
             <a href ="https://www.facebook.com/CorazonSocial2020" target="_blank" class = "social-media-icon">
                 <i class='bx bxl-facebook'></i>
               </a>
-                <a href ="./" class = "social-media-icon">
-                    <i class='bx bxl-whatsapp' ></i>
-                </a>
+              <a href ="https://api.whatsapp.com/send?phone=573507059941&text=Contacto%20con%20la%20sede%20Engativ%C3%A1" class = "social-media-icon">
+                <i class='bx bxl-whatsapp' ></i>
+            </a>
+            <a href ="https://api.whatsapp.com/send?phone=573118009845&text=Contacto%20con%20la%20sede%20Usema" class = "social-media-icon">
+                <i class='bx bxl-whatsapp' ></i>
                 <a href ="https://www.instagram.com/fundacion_jovenes/?hl=es-la" target="_blank" class = "social-media-icon">
                     <i class='bx bxl-instagram' ></i>
             </a>
@@ -105,7 +117,7 @@
     
         </div>
     </footer>
-    <script src ="index.js"></script>
+    <script src ="js/carrusel.js"></script>
 
 </body>
 
