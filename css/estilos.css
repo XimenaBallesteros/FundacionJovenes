@@ -53,7 +53,6 @@ header{
     background: linear-gradient(-90deg, #f89cd9 0%,#78fd44 25%,  #73b3fd 40%,#ffffff 100%);
 }
 .menufijo2{
-    margin:  auto;
     opacity: 1;
     flex-wrap: wrap;
     text-align: right;
@@ -601,13 +600,28 @@ float: left;
  }
 
  @media screen and (max-width:800px) {
-     .menu-navegacion{
-         width: 50vw;
-     }
-     .menu{
-        width: 35px;
-    height: 35px;
+    
+    .logo{
+        width: 60px;
+        height: 60px;
     }
+   
+   .menufijo ul a{
+    font-size:15px;
+    padding: 6px 16px 15px 16px;
+}
+.menufijo1 ul a{
+    font-size:15px;
+    padding: 6px 16px 15px 16px;
+}
+.menufijo2 ul a{
+    font-size:15px;
+    padding: 6px 16px 15px 16px;
+}
+.news-cards{
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
      .titulo{
          font-size:40px;
          text-align: center;
@@ -654,13 +668,39 @@ float: left;
      }
  }
  @media screen and (max-width:500px) {
-    .menu-navegacion{
-        width: 30vw;
+    .logo{
+        width: 40px;
+        height: 40px;
     }
-    .menu{
-        width: 30px;
-    height: 30px;
-    }
+   
+   .menufijo ul a{
+    font-size:13px;
+    padding: 4px 12px 11px 12px;
+}
+.menufijo1 ul a{
+    font-size:13px;
+    padding: 4px 12px 11px 12px;
+}
+.menufijo2 ul a{
+    font-size:13px;
+    padding: 4px 12px 11px 12px;
+}
+.menufijo2{
+    size : 50%;
+}
+.news-cards{
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+}
+.carousel {
+    max-width: 500px;
+}
+#imagen {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+
     .titulo{
         font-size:30px;
     }
@@ -669,11 +709,14 @@ float: left;
        font-size: 30px;
      
     }
+    .parrafo{
+        font-size: 20px;
+    }
     .copy{
         font-size: 20px;
     }
     .checklist-quienes{
-       columns: 1;
+        grid-template-columns: repeat(1, 1fr);
        text-align: center;
     }
     .productos-contenedor img{
@@ -712,10 +755,32 @@ float: left;
 
     .contact-us{
         text-align: center;
-        width:60%;
+        width:70%;
         margin-bottom: 20px;
     }
     .menu-navegacion{
         size: 20px;
     }
+   
+    .contenedorC body{
+       font-size: 10px;
+    }
+
+    .contenidoC{ 
+        display: flex;
+        width: 80%;
+        overflow: hidden;
+    }
+ 
+    .formularioC input[type='text'],.formularioC textarea{
+    width: 65%;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    border: 1px solid #999;
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    outline: 0;
+    }
+   
 }
